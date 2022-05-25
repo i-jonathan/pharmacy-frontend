@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>pharmacy</title>
-    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../assets/css/Navbar-Right-Links-Dark.css">
-    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/Navbar-Right-Links-Dark.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 
 <body>
@@ -18,20 +18,20 @@
                     </svg></span><span>Pharmacy</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-2">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="../index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../dashboard.html">Dashboard</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../account/employee-list.html">Employee</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link" href="account/employee-list.html">Employee</a></li>
                     <li class="nav-item">
                         <div class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#">Sales</a>
-                            <div class="dropdown-menu"><a class="dropdown-item" href="../sale/point-of-sale.html">Point Of Sale</a><a class="dropdown-item" href="../sale/all-payment-methods.html">Payment Methods</a><a class="dropdown-item" href="../sale/all-returns.html">Returns</a><a class="dropdown-item" href="../sale/all-receipts.html">Receipts&nbsp;</a></div>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="sale/point-of-sale.html">Point Of Sale</a><a class="dropdown-item" href="sale/all-payment-methods.html">Payment Methods</a><a class="dropdown-item" href="sale/all-returns.html">Returns</a><a class="dropdown-item" href="sale/all-receipts.html">Receipts&nbsp;</a></div>
                         </div>
                     </li>
                     <li class="nav-item">
                         <div class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#">Inventory</a>
-                            <div class="dropdown-menu"><a class="dropdown-item" href="../inventory/all-products.html">Products</a><a class="dropdown-item" href="../inventory/all-categories.html">Product Categories</a><a class="dropdown-item" href="../inventory/all-suppliers.html">Suppliers</a></div>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="inventory/all-products.html">Products</a><a class="dropdown-item" href="inventory/all-categories.html">Product Categories</a><a class="dropdown-item" href="inventory/all-suppliers.html">Suppliers</a></div>
                         </div>
                     </li>
-                </ul><a class="btn btn-primary ms-md-2" role="button" href="../account/login.html">Login</a>
+                </ul><a class="btn btn-primary ms-md-2" role="button" href="account/login.html">Login</a>
             </div>
         </div>
     </nav>
@@ -39,10 +39,12 @@
         <div class="container-fluid"><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link active" href="#">All Products</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Create Product</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">All Product Categories</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Create Product Category</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/inventory/all-products.html">All Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/inventory/create-product.html">Create Product</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/inventory/all-categories.html">All Product Categories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/inventory/create-category.html">Create Product Category</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/inventory/all-suppliers.html">All Suppliers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/inventory/create-supplier.html">Create Supplier</a></li>
                 </ul>
             </div>
         </div>
@@ -52,54 +54,167 @@
             <table class="table">
                 <thead>
                     <tr>
-                        <th>S/N</th>
+                        <th style="width: 5%;">S/N</th>
                         <th>Name</th>
                         <th>Category</th>
-                        <th style="width: 200px;">Quantity Available</th>
-                        <th style="width: 200px;">Quantity Sold</th>
-                        <th style="text-align: center;">Info</th>
+                        <th style="width: 15%;">Selling Price</th>
+                        <th style="width: 15%;">Quantity Available</th>
+                        <th style="width: 10%;">Quantity Sold</th>
+                        <th style="text-align: center;width: 10%;">Info</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Cell 1</td>
+                        <td>1</td>
+                        <td>Cell 2</td>
                         <td>Cell 2</td>
                         <td>Cell 2</td>
                         <td>Cell 2</td>
                         <td>Cell 2</td>
                         <td style="width: 120px;text-align: center;"><button class="btn btn-light" type="button" data-bs-toggle="modal" data-bs-target="#modal-1">Details</button>
                             <div class="modal fade" role="dialog" tabindex="-1" id="modal-1">
-                                <div class="modal-dialog" role="document">
+                                <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h4 class="modal-title">Modal Title</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            <h3 class="modal-title">Drug Name</h3><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
-                                            <p>The content of your modal.</p>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-6" style="padding: 12px 12px;">
+                                                        <div>
+                                                            <h4 class="text-start">Description</h4>
+                                                            <p class="text-start">Some text</p>
+                                                        </div>
+                                                        <div>
+                                                            <h4 class="text-start">Category</h4>
+                                                            <p class="text-start">Some text</p>
+                                                        </div>
+                                                        <div>
+                                                            <h4 class="text-start">Purchase Price</h4>
+                                                            <p class="text-start">Some text</p>
+                                                        </div>
+                                                        <div>
+                                                            <h4 class="text-start">Selling Price</h4>
+                                                            <p class="text-start">Some text</p>
+                                                        </div>
+                                                        <div>
+                                                            <h4 class="text-start">Reorder Level</h4>
+                                                            <p class="text-start">Some text</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6" style="padding: 12px 12px;">
+                                                        <div>
+                                                            <h4 class="text-start">Quantity Available</h4>
+                                                            <p class="text-start">Some text</p>
+                                                        </div>
+                                                        <div>
+                                                            <h4 class="text-start">Quantity Sold</h4>
+                                                            <p class="text-start">Some text</p>
+                                                        </div>
+                                                        <div>
+                                                            <h4 class="text-start">Purchase Date</h4>
+                                                            <p class="text-start">Some text</p>
+                                                        </div>
+                                                        <div>
+                                                            <h4 class="text-start">Production Date</h4>
+                                                            <p class="text-start">Some text</p>
+                                                        </div>
+                                                        <div>
+                                                            <h4 class="text-start">Expiry Date</h4>
+                                                            <p class="text-start">Some text</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="modal-footer"><button class="btn btn-light" type="button" data-bs-dismiss="modal">Close</button><button class="btn btn-primary" type="button">Save</button></div>
+                                        <div class="modal-footer justify-content-between">
+                                            <div><button class="btn btn-primary btn-danger" type="button" style="margin-right: 5px;margin-left: 5px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-trash" style="margin-right: 2px;margin-left: 2px;">
+                                                        <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"></path>
+                                                        <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"></path>
+                                                    </svg>Delete</button><button class="btn btn-light" type="button" data-bs-dismiss="modal" style="margin-right: 5px;margin-left: 5px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-pencil" style="margin-right: 2px;margin-left: 2px;">
+                                                        <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"></path>
+                                                    </svg>Edit</button></div>
+                                            <div><button class="btn btn-light" type="button" data-bs-dismiss="modal" style="margin-right: 5px;margin-left: 5px;">Close</button><button class="btn btn-primary" type="button" style="margin-right: 5px;margin-left: 5px;">Save</button></div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </td>
                     </tr>
                     <tr>
-                        <td>Cell 3</td>
+                        <td>2</td>
+                        <td>Cell 4</td>
                         <td>Cell 4</td>
                         <td>Cell 4</td>
                         <td>Cell 4</td>
                         <td>Cell 4</td>
                         <td style="width: 120px;text-align: center;"><button class="btn btn-light" type="button" data-bs-toggle="modal" data-bs-target="#modal-2">Details</button>
                             <div class="modal fade" role="dialog" tabindex="-1" id="modal-2">
-                                <div class="modal-dialog" role="document">
+                                <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h4 class="modal-title">Modal Title 2</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            <h3 class="modal-title">Drug Name</h3><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
-                                            <p>The content of your modal.</p>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-6" style="padding: 12px 12px;">
+                                                        <div>
+                                                            <h4 class="text-start">Description</h4>
+                                                            <p class="text-start">Some text</p>
+                                                        </div>
+                                                        <div>
+                                                            <h4 class="text-start">Category</h4>
+                                                            <p class="text-start">Some text</p>
+                                                        </div>
+                                                        <div>
+                                                            <h4 class="text-start">Purchase Price</h4>
+                                                            <p class="text-start">Some text</p>
+                                                        </div>
+                                                        <div>
+                                                            <h4 class="text-start">Selling Price</h4>
+                                                            <p class="text-start">Some text</p>
+                                                        </div>
+                                                        <div>
+                                                            <h4 class="text-start">Reorder Level</h4>
+                                                            <p class="text-start">Some text</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6" style="padding: 12px 12px;">
+                                                        <div>
+                                                            <h4 class="text-start">Quantity Available</h4>
+                                                            <p class="text-start">Some text</p>
+                                                        </div>
+                                                        <div>
+                                                            <h4 class="text-start">Quantity Sold</h4>
+                                                            <p class="text-start">Some text</p>
+                                                        </div>
+                                                        <div>
+                                                            <h4 class="text-start">Purchase Date</h4>
+                                                            <p class="text-start">Some text</p>
+                                                        </div>
+                                                        <div>
+                                                            <h4 class="text-start">Production Date</h4>
+                                                            <p class="text-start">Some text</p>
+                                                        </div>
+                                                        <div>
+                                                            <h4 class="text-start">Expiry Date</h4>
+                                                            <p class="text-start">Some text</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="modal-footer"><button class="btn btn-light" type="button" data-bs-dismiss="modal">Close</button><button class="btn btn-primary" type="button">Save</button></div>
+                                        <div class="modal-footer justify-content-between">
+                                            <div><button class="btn btn-primary btn-danger" type="button" style="margin-right: 5px;margin-left: 5px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-trash" style="margin-right: 2px;margin-left: 2px;">
+                                                        <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"></path>
+                                                        <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"></path>
+                                                    </svg>Delete</button><button class="btn btn-light" type="button" data-bs-dismiss="modal" style="margin-right: 5px;margin-left: 5px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-pencil" style="margin-right: 2px;margin-left: 2px;">
+                                                        <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"></path>
+                                                    </svg>Edit</button></div>
+                                            <div><button class="btn btn-light" type="button" data-bs-dismiss="modal" style="margin-right: 5px;margin-left: 5px;">Close</button><button class="btn btn-primary" type="button" style="margin-right: 5px;margin-left: 5px;">Save</button></div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -109,7 +224,7 @@
             </table>
         </div>
     </div>
-    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
 
 </html>

@@ -1,5 +1,5 @@
 package global
 
 var (
-	ApiURL = "http://localhost:9560/"
+	ApiURL = "http://localhost:9576/"
 )
