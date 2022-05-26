@@ -3,7 +3,6 @@ package main
 import (
 	"PharmUI/account"
 	"net/http"
-	"os"
 )
 
 func main() {
@@ -16,6 +15,7 @@ func main() {
 	//http.HandleFunc("/inventory/view/", inventory.ViewInventory)
 	http.HandleFunc("/account/register", account.RegisterAccount)
 
-	port := os.Getenv("PORT")
+	//port := os.Getenv("PORT")
+	port := "7060"
 	_ = http.ListenAndServe(":"+ port, nil)
 }
